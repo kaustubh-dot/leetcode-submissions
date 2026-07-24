@@ -17,7 +17,7 @@ public:
             if (v.find(s[low - 1]) != v.end()) {
                 count--;
             }
-            if (high + 1 > s.length()) {
+            if (high + 1 >= s.length()) {
                 break;
             }
             high++;
