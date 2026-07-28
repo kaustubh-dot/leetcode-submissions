@@ -10,23 +10,13 @@
  */
 class Solution {
 public:
-    int dectobin(int num){
-        int power=1;
-        int ans=0;
-        while(num>0){
-            ans=ans+power*num%10;
-            power*=2;
-            num/=10;
-        }
-        return ans;
-    }
     int getDecimalValue(ListNode* head) {
-        ListNode* temp=head;
-        int num=0;
-        while(temp!=NULL){
-            num=num*2+temp->val;
-            temp=temp->next;
+        ListNode* temp = head;
+        int num = 0;
+        while (temp != NULL) {
+            num = num * 2 + temp->val;
+            temp = temp->next;
         }
-        return num;        
+        return num;
     }
 };
