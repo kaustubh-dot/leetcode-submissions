@@ -3,7 +3,7 @@ public:
     int solve(vector<int>& nums, int k) {
         int low = 0, high = 0;
         int count = 0;
-        unordered_map<int, int> m;
+        map<int, int> m;
         while (high < nums.size()) {
             m[nums[high]]++;
             while (m.size() > k) {
