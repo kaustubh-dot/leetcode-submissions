@@ -1,9 +1,9 @@
 class Solution {
 public:
-    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& neww) {
+    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& n) {
+        int start1=n[0];
         vector<vector<int>> ans;
-        int start1=neww[0];
-        int end1=neww[1];
+        int end1=n[1];
         for(int i=0;i<intervals.size();i++){
             int start2=intervals[i][0];
             int end2=intervals[i][1];
