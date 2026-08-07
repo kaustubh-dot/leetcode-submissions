@@ -23,16 +23,7 @@ public:
                 st2.push(ch);
             }
         }
-        string ans1 = "";
-        string ans2 = "";
-        while (!st1.empty()) {
-            ans1.push_back(st1.top());
-            st1.pop();
-        }
-        while (!st2.empty()) {
-            ans2.push_back(st2.top());
-            st2.pop();
-        }
-        return ans1 == ans2;
+        
+        return st1 == st2;
     }
 };
