@@ -4,7 +4,7 @@ public:
         unordered_map<char,int> m;
         int low=0;
         int high=0;
-        int ans=INT_MIN;
+        int ans=0;
         int n=s.length();
         while(high<n){
             m[s[high]]++;
